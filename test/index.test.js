@@ -9,4 +9,8 @@ describe("adder Test", function () {
   it("2+1 should return 3", function () {
     expect(adder(2, 1)).equal(3);
   });
+
+  it("2+2 should return 4", function () {
+    expect(adder(2, 1)).equal(4);
+  });
 });
