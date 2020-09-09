@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - 14
+
+git:
+  depth: 1
+  quiet: true
+
+#safelist
+branches:
+  only:
+    - test
+    - failingtest
+
+#script
+script:
+  - npm install
+  - npm test
+
+#notifications
+notifications:
+  email:
+    recipients:
+      - orhan@hotmail.ca
+    on_failure: always
